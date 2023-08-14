@@ -89,10 +89,26 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 41,
    "id": "bcff7cc6-0458-4754-81d7-c3c7cfa84bc5",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your name:  juan\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Who the heck are you?\n",
+      "I do not know anyone named juan!\n"
+     ]
+    }
+   ],
    "source": [
     "name = input('Enter your name: ')\n",
     "\n",
