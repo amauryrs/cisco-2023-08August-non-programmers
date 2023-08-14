@@ -214,11 +214,38 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 51,
    "id": "caa7c589-3b87-4c26-9da1-9d6f5ace4ea9",
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a word in English:  banana\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Pig Latin translation: ananabay\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Get input from the user\n",
+    "english_word = input(\"Enter a word in English: \").lower()\n",
+    "\n",
+    "# Check if the first letter is a vowel\n",
+    "if english_word[0] in ['a', 'e', 'i', 'o', 'u']:\n",
+    "    pig_latin_translation = english_word + \"way\"\n",
+    "else:\n",
+    "    pig_latin_translation = english_word[1:] + english_word[0] + \"ay\"\n",
+    "\n",
+    "# Print the Pig Latin translation\n",
+    "print(\"Pig Latin translation:\", pig_latin_translation)\n"
+   ]
   }
  ],
  "metadata": {
