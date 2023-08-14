@@ -20,8 +20,28 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 6,
    "id": "f138a455-ac8b-4fed-bba7-44678b4e2c61",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax. Perhaps you forgot a comma? (2280421619.py, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  Cell \u001b[0;32mIn[6], line 1\u001b[0;36m\u001b[0m\n\u001b[0;31m    Var (Juan Ortiz)\u001b[0m\n\u001b[0m         ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax. Perhaps you forgot a comma?\n"
+     ]
+    }
+   ],
+   "source": [
+    "Var (Juan Ortiz)\n",
+    "print (\"Morning,\" + Var)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "517c53f8-9662-476c-83ab-8747e60c3a29",
    "metadata": {},
    "outputs": [],
    "source": []
