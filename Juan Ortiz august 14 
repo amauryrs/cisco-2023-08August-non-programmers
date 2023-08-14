@@ -122,11 +122,52 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 42,
    "id": "61fbcc64-a435-49bb-bc69-c1fb671d8ca8",
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Generated number: 92\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Guess the number (between 0 and 100):  92\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "You got it!\n"
+     ]
+    }
+   ],
+   "source": [
+    "import random\n",
+    "\n",
+    "# Generate a random number from 0 to 100\n",
+    "number = random.randint(0, 100)\n",
+    "\n",
+    "# Print the generated number\n",
+    "print(\"Generated number:\", number)\n",
+    "\n",
+    "# Ask the user to guess the number\n",
+    "user_guess = int(input(\"Guess the number (between 0 and 100): \"))\n",
+    "\n",
+    "# Compare the user's guess with the generated number\n",
+    "if user_guess == number:\n",
+    "    print(\"You got it!\")\n",
+    "elif user_guess > number:\n",
+    "    print(\"Too high!\")\n",
+    "else:\n",
+    "    print(\"Too low!\")"
+   ]
   }
  ],
  "metadata": {
