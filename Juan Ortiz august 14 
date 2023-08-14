@@ -171,16 +171,29 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 47,
+   "execution_count": 48,
    "id": "29f6fdef-f3c1-441a-bb2f-d3ba8010d61c",
    "metadata": {},
    "outputs": [
     {
-     "ename": "SyntaxError",
-     "evalue": "unterminated string literal (detected at line 7) (1335199176.py, line 7)",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[0;36m  Cell \u001b[0;32mIn[47], line 7\u001b[0;36m\u001b[0m\n\u001b[0;31m    if user_guess == number\"\u001b[0m\n\u001b[0m                           ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m unterminated string literal (detected at line 7)\n"
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "generated number: 53\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Guess the number (between 0 and 100):  10\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Too low!\n"
      ]
     }
    ],
@@ -191,7 +204,7 @@
     "print(\"generated number:\", number)\n",
     "user_guess = int(input(\"Guess the number (between 0 and 100): \"))\n",
     "\n",
-    "if user_guess == number\"\n",
+    "if user_guess == number:\n",
     "   print(\"you got it\")\n",
     "elif user_guess > number:\n",
     "    print(\"Too high!\")\n",
