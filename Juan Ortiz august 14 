@@ -39,22 +39,21 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 21,
+   "execution_count": 24,
    "id": "517c53f8-9662-476c-83ab-8747e60c3a29",
    "metadata": {},
    "outputs": [
     {
      "ename": "SyntaxError",
-     "evalue": "invalid syntax. Perhaps you forgot a comma? (249118645.py, line 2)",
+     "evalue": "invalid syntax (1165630649.py, line 2)",
      "output_type": "error",
      "traceback": [
-      "\u001b[0;36m  Cell \u001b[0;32mIn[21], line 2\u001b[0;36m\u001b[0m\n\u001b[0;31m    name  = input('enter your name: '_)\u001b[0m\n\u001b[0m                  ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax. Perhaps you forgot a comma?\n"
+      "\u001b[0;36m  Cell \u001b[0;32mIn[24], line 2\u001b[0;36m\u001b[0m\n\u001b[0;31m    enter your name: Juan\u001b[0m\n\u001b[0m          ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
      ]
     }
    ],
    "source": [
-    "print=(Helloooo)\n",
-    "name  = input('enter your name: '_)\n",
+    "name  = input('enter your name:')\n",
     "enter your name: Juan \n"
    ]
   },
