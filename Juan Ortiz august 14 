@@ -39,23 +39,29 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 24,
+   "execution_count": 25,
    "id": "517c53f8-9662-476c-83ab-8747e60c3a29",
    "metadata": {},
    "outputs": [
     {
-     "ename": "SyntaxError",
-     "evalue": "invalid syntax (1165630649.py, line 2)",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[0;36m  Cell \u001b[0;32mIn[24], line 2\u001b[0;36m\u001b[0m\n\u001b[0;31m    enter your name: Juan\u001b[0m\n\u001b[0m          ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter your name: juan ortiz \n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello, juan ortiz !\n"
      ]
     }
    ],
    "source": [
     "name  = input('enter your name:')\n",
-    "print('hello, ' + name + '! \n",
-    "print \n"
+    "print('hello, ' + name + '!') \n",
+    "\n"
    ]
   },
   {
