@@ -119,6 +119,14 @@
     "    print('Who the heck are you?')\n",
     "    print('I do not know anyone named ' + name + '!')"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "61fbcc64-a435-49bb-bc69-c1fb671d8ca8",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
