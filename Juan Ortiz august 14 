@@ -66,13 +66,24 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 29,
    "id": "1e4f3ca0-ab66-4eef-8d0d-63d210a8c065",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "ename": "IndentationError",
+     "evalue": "expected an indented block after 'if' statement on line 2 (250564978.py, line 3)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  Cell \u001b[0;32mIn[29], line 3\u001b[0;36m\u001b[0m\n\u001b[0;31m    print('hello bello')\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mIndentationError\u001b[0m\u001b[0;31m:\u001b[0m expected an indented block after 'if' statement on line 2\n"
+     ]
+    }
+   ],
    "source": [
     "name = input('enter your name:')\n",
-    "if name = 'juan "
+    "if name == 'juan ortiz':\n",
+    "print('hello bello')\n",
+    "print('what are you doing here?')"
    ]
   }
  ],
