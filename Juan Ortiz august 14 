@@ -54,7 +54,8 @@
    ],
    "source": [
     "name  = input('enter your name:')\n",
-    "enter your name: Juan \n"
+    "print('hello, ' + name + '! \n",
+    "print \n"
    ]
   },
   {
