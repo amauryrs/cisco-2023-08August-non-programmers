@@ -122,7 +122,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 42,
+   "execution_count": 43,
    "id": "61fbcc64-a435-49bb-bc69-c1fb671d8ca8",
    "metadata": {},
    "outputs": [
@@ -130,21 +130,21 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Generated number: 92\n"
+      "Generated number: 79\n"
      ]
     },
     {
      "name": "stdin",
      "output_type": "stream",
      "text": [
-      "Guess the number (between 0 and 100):  92\n"
+      "Guess the number (between 0 and 100):  80\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "You got it!\n"
+      "Too high!\n"
      ]
     }
    ],
@@ -168,6 +168,14 @@
     "else:\n",
     "    print(\"Too low!\")"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "caa7c589-3b87-4c26-9da1-9d6f5ace4ea9",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
