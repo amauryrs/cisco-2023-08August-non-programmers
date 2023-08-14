@@ -176,7 +176,11 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "import random\n"
+    "import random\n",
+    "number = random.randint(0, 100)\n",
+    "\n",
+    "print(\"generated number:\", number)\n",
+    "user_guess = int(input\"guess the number (between -"
    ]
   },
   {
