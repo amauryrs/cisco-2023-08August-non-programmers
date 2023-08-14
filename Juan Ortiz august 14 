@@ -71,7 +71,8 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "name '"
+    "name = input('enter your name:')\n",
+    "if name = 'juan "
    ]
   }
  ],
