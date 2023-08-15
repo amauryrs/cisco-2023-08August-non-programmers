@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Juan ortiz august 14</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Deepthi 15 Aug</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7435,7 +7435,7 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2491d2e8-6bfc-46fe-9e75-8cda765d3c86">
+<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3ebfe199-ef2e-426c-86c1-817e5ccb586d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7443,77 +7443,13 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Ask the user to enter a number</span>
-<span class="n">num1_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a number: "</span><span class="p">)</span>
-
-<span class="c1"># Check if the input can be converted to an integer</span>
-<span class="k">if</span> <span class="ow">not</span> <span class="n">num1_input</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">num1_input</span><span class="si">}</span><span class="s2"> is not numeric; giving up"</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">num1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num1_input</span><span class="p">)</span>
-    
-    <span class="c1"># Ask the user to enter an operator</span>
-    <span class="n">operator</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter an operator (+ or -): "</span><span class="p">)</span>
-    
-    <span class="c1"># Check if the operator is valid</span>
-    <span class="k">if</span> <span class="n">operator</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'+'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Invalid operator: </span><span class="si">{</span><span class="n">operator</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="c1"># Ask the user to enter a second number</span>
-        <span class="n">num2_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a number: "</span><span class="p">)</span>
-        
-        <span class="c1"># Check if the input can be converted to an integer</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">num2_input</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">num2_input</span><span class="si">}</span><span class="s2"> is not numeric; giving up"</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">num2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num2_input</span><span class="p">)</span>
-            
-            <span class="c1"># Perform the operation based on the operator</span>
-            <span class="k">if</span> <span class="n">operator</span> <span class="o">==</span> <span class="s1">'+'</span><span class="p">:</span>
-                <span class="n">result</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">result</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">-</span> <span class="n">num2</span>
-                
-            <span class="c1"># Print the result</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">num1</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">operator</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">num2</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="n">Copy</span> <span class="ow">and</span> <span class="n">paste</span> <span class="n">this</span> <span class="n">code</span> <span class="n">into</span> <span class="n">a</span> <span class="n">Python</span> <span class="n">interpreter</span> <span class="ow">or</span> <span class="n">script</span><span class="p">,</span> <span class="ow">and</span> <span class="n">it</span> <span class="n">will</span> <span class="n">guide</span> <span class="n">the</span> <span class="n">user</span> <span class="n">through</span> <span class="n">entering</span> <span class="n">numbers</span> <span class="ow">and</span> <span class="n">an</span> <span class="n">operator</span> <span class="n">to</span> <span class="n">perform</span> <span class="n">addition</span> <span class="ow">or</span> <span class="n">subtraction</span><span class="o">.</span> <span class="n">It</span> <span class="n">includes</span> <span class="n">error</span> <span class="n">handling</span> <span class="n">to</span> <span class="n">ensure</span> <span class="n">that</span> <span class="n">the</span> <span class="nb">input</span> <span class="ow">is</span> <span class="n">numeric</span> <span class="ow">and</span> <span class="n">valid</span><span class="o">.</span> <span class="n">Remember</span> <span class="n">to</span> <span class="n">run</span> <span class="n">the</span> <span class="n">code</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">Python</span> <span class="n">environment</span><span class="o">.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">s</span><span class="o">=</span> <span class="s1">'Deepthi'</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-cyan-fg">  Cell </span><span class="ansi-green-fg">In[1], line 34</span>
-<span class="ansi-red-fg">    Copy and paste this code into a Python interpreter or script, and it will guide the user through entering numbers and an operator to perform addition or subtraction. It includes error handling to ensure that the input is numeric and valid. Remember to run the code in a Python environment.</span>
-                   ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=19ef8836-790a-4a5b-a3f6-3f75c21cec7f">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=87dc1bca-6d92-46d9-bbe8-e7ff2b362180">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1b5ff2d8-1eed-4231-8791-9b25379bcec0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7521,27 +7457,50 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Initialize counters for odds and evens</span>
-<span class="n">odds</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">evens</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">one_character</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">one_character</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>D
+e
+e
+p
+t
+h
+i
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4d2f2355-7967-42cf-a14b-59c7c3ecf6c2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">digits</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">vowels</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">others</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">s</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter a string: '</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 
-<span class="c1"># Ask the user to enter a string of digits</span>
-<span class="n">digit_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a string of digits: "</span><span class="p">)</span>
-
-<span class="c1"># Go through each character (digit) in the string</span>
-<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">digit_string</span><span class="p">:</span>
-    <span class="c1"># Convert the character to an integer</span>
-    <span class="n">digit</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">one_character</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">one_character</span> <span class="ow">in</span> <span class="s1">'aeiou'</span><span class="p">:</span>
+        <span class="n">vowels</span> <span class="o">+=</span><span class="mi">1</span>
+        <span class="nb">print</span><span class="p">({</span><span class="n">vowels</span><span class="p">})</span>
     
-    <span class="c1"># Check if the digit is odd or even using the % operator</span>
-    <span class="k">if</span> <span class="n">digit</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">evens</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">odds</span> <span class="o">+=</span> <span class="mi">1</span>
-
-<span class="c1"># Print the total number of odds and evens</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"odds:"</span><span class="p">,</span> <span class="n">odds</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"evens:"</span><span class="p">,</span> <span class="n">evens</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7557,42 +7516,37 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>odds: 0
-evens: 1
+<pre>{1}
+{2}
+{3}
 </pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6d221900-66ad-4858-9f4b-1209bcf00eea">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4db5ed1e-ef10-42e9-b7f1-5e369d74e9b6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Step 1: Define the counting variables</span>
-<span class="n">digits</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">vowels</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">others</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">digits</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">vowels</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">others</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">s</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter a string: '</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 
-<span class="c1"># Step 2: Ask the user to enter a string</span>
-<span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a string: "</span><span class="p">)</span>
-
-<span class="c1"># Step 3: Iterate through the characters in the input string</span>
-<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">user_input</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
-        <span class="n">digits</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">elif</span> <span class="n">char</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="s1">'aeiou'</span><span class="p">:</span>
-        <span class="n">vowels</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">one_character</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">one_character</span> <span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+        <span class="n">digits</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">one_character</span> <span class="ow">in</span> <span class="s1">'aeiou'</span><span class="p">:</span>
+         <span class="n">vowels</span> <span class="o">+=</span><span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">others</span> <span class="o">+=</span> <span class="mi">1</span>
-
-<span class="c1"># Step 4: Print the results</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"digits: </span><span class="si">{</span><span class="n">digits</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"vowels: </span><span class="si">{</span><span class="n">vowels</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"others: </span><span class="si">{</span><span class="n">others</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="n">others</span><span class="o">+=</span><span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'vowels = </span><span class="si">{</span><span class="n">vowels</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'digits = </span><span class="si">{</span><span class="n">digits</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'others = </span><span class="si">{</span><span class="n">others</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7608,28 +7562,154 @@ evens: 1
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>digits: 0
-vowels: 2
-others: 3
+<pre>vowels = 3
+digits = 3
+others = 4
 </pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d560f7f3-eef0-48f7-9a7b-5597e880c5c2">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b5b84936-215f-4468-9dca-4bdf62e3a279">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Step 1: Ask the user to enter their name</span>
-<span class="n">user_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your name: "</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">one_iteration</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Hello'</span><span class="p">)</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Hello
+Hello
+Hello
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e27e4c40-6ca7-4300-9b4a-be6460d2a74e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">iteration</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">iteration</span><span class="si">}</span><span class="s1"> Hello'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>0 Hello
+1 Hello
+2 Hello
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=586b7706-bc86-42e0-aa7c-1a90cab5e0fc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">n</span><span class="o">=</span><span class="mi">123456</span>
+<span class="k">for</span> <span class="n">digit</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">digit</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>1
+2
+3
+4
+5
+6
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=82ad2e2f-b8a9-4007-b632-b500220507b5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">count</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>5
+6
+7
+8
+9
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=890d60ac-4473-4f6f-92a7-50adf3ac4ea7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter your name: '</span><span class="p">)</span> <span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 
-<span class="c1"># Step 2: Print the user's name as a triangle</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">user_name</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">user_name</span><span class="p">[:</span><span class="n">i</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">[:</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -7645,31 +7725,26 @@ others: 3
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>j
-ju
-jua
-juan
+<pre>h
+he
+hel
 </pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=59e18ed5-a901-44b5-9cd6-0ba90a52c117">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b15df184-08a1-4f5c-ae04-ed680ac7a4c9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">sentence</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a sentence: "</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-<span class="n">words</span> <span class="o">=</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> 
-<span class="n">translated_words</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="s1">'aeiou'</span><span class="p">:</span>
-        <span class="n">translated_words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span> <span class="o">+</span> <span class="s1">'way'</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">translated_words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s1">'ay'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter your name: '</span><span class="p">)</span> <span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">one_iteration</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">one_iteration</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7682,9 +7757,526 @@ juan
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 </div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>0
+1
+2
+3
+4
+5
+6
+</pre>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b726b730-99ed-4898-87a8-9f4ed99667e1">
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2838fb72-f12a-4dec-b5f8-e768f2b89b3f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter your name: '</span><span class="p">)</span> <span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">one_iteration</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>D
+D
+D
+D
+D
+D
+D
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=20f22725-bb41-46db-a1ff-9bb6384c5ea5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter your name: '</span><span class="p">)</span> <span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">[:</span><span class="n">index</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+D
+De
+Dee
+Deep
+Deept
+Deepth
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c471ecf8-daa6-41fa-9312-68cf4fbb3109">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter your name: '</span><span class="p">)</span> <span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">[:</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>M
+Mr
+Mre
+Mret
+Mreth
+Mrethi
+Mrethik
+Mrethika
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=641e23bc-0d75-4480-91da-af7cc98c1e46">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter your name: '</span><span class="p">)</span> <span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">[:</span><span class="n">index</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>M
+Mi
+Mit
+Mith
+Mithr
+Mithra
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=29204a1e-6220-457d-bf31-9302c1242819">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter your name: '</span><span class="p">)</span> <span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">[:</span><span class="n">index</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>D
+De
+Dee
+Deep
+Deept
+Deepth
+Deepthi
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8ec03eb8-5026-4e87-928f-1d88b3da596a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">=</span><span class="mi">5</span>
+<span class="k">while</span> <span class="n">x</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span><span class="o">-=</span><span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>5
+4
+3
+2
+1
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dd1de98c-1ed2-4e60-bc2b-d94e86059cbc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">total</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">number</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter a number: '</span><span class="p">)</span>
+<span class="n">x</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+        <span class="n">total</span> <span class="o">=</span> <span class="n">x</span> 
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Try again'</span><span class="p">)</span>
+        
+        
+        
+        
+    
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[41], line 5</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> x<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">int</span>(number)
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-bold" style="color: rgb(0,135,0)">while</span> x <span style="color: rgb(98,98,98)">&lt;</span> <span style="color: rgb(98,98,98)">100</span>:
+<span class="ansi-green-fg">----&gt; 5</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">isdigit</span>():
+<span class="ansi-green-intense-fg ansi-bold">      6</span>         <span style="color: rgb(0,135,0)">print</span>(x)
+<span class="ansi-green-intense-fg ansi-bold">      7</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>: 
+
+<span class="ansi-red-fg">AttributeError</span>: 'int' object has no attribute 'isdigit'</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=17c86b48-8cc9-4e80-9d19-acdec550cb06">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">total</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">s</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter a number: '</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">x</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">total</span><span class="o">+=</span><span class="n">x</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Total =</span><span class="si">{</span><span class="n">total</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+        
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Total =58
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ae16aa3c-16d4-4d17-882f-7fd35288e447">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">total</span><span class="o">=</span><span class="mi">0</span>
+
+
+<span class="k">while</span> <span class="n">total</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="n">s</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter a number: '</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+    <span class="n">n</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="n">total</span><span class="o">+=</span><span class="n">n</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Total =</span><span class="si">{</span><span class="n">total</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Total =156
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cb8e6a00-d5b6-4edf-9c49-e82be7c1d4cd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">total</span><span class="o">=</span><span class="mi">0</span>
+
+
+<span class="k">while</span> <span class="n">total</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="n">s</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter a number: '</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+    <span class="n">n</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="n">total</span><span class="o">+=</span><span class="n">n</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Total =</span><span class="si">{</span><span class="n">total</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Total =123
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e5328b73-c16d-4bf0-821e-35af08e7a968">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">total</span><span class="o">=</span><span class="mi">0</span>
+
+
+<span class="k">while</span> <span class="n">total</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="n">s</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter a number: '</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+        <span class="n">n</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+        <span class="n">total</span><span class="o">+=</span><span class="n">n</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s1">  is not numeric; try again!'</span><span class="p">)</span>
+        
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Total =</span><span class="si">{</span><span class="n">total</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>hj  is not numeric; try again!
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Total =185
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0571258c-0ebb-48de-93d9-7cd6fa4cf952">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">total</span><span class="o">=</span><span class="mi">0</span>
+
+<span class="n">s</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter a number: '</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="k">while</span> <span class="n">s</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+    <span class="n">n</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="n">total</span><span class="o">+=</span><span class="n">n</span>
+    <span class="k">if</span> <span class="n">s</span> <span class="o">==</span> <span class="s1">' '</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Total, </span><span class="si">{</span><span class="n">total</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7d0890be-f077-4a2d-a75c-d65d6c9e43d3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">total</span><span class="o">=</span><span class="mi">0</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">s</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter a number: '</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">s</span> <span class="o">==</span> <span class="s1">' '</span><span class="p">:</span>
+        <span class="k">break</span>
+
+    <span class="k">for</span> <span class="n">one_character</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">one_character</span> <span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+        <span class="n">total</span><span class="o">+=</span><span class="nb">int</span><span class="p">(</span><span class="n">one_character</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">one_character</span><span class="si">}</span><span class="s1"> is not numeric'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Total, </span><span class="si">{</span><span class="n">total</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5a895e54-82be-4450-9156-30a81bfbbdf2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Hello'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7e156ff3-0059-4f89-9cc0-6ed3576c43fb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
